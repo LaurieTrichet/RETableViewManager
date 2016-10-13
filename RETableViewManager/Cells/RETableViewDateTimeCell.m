@@ -123,7 +123,7 @@
 - (void)layoutSubviews
 {
     [super layoutSubviews];
-    self.textField.frame = CGRectZero;
+    self.textField.frame = CGRectMake(0.f,0.f,0.f,0.f);
     self.textField.alpha = 0;
     
     [self layoutDetailView:self.dateLabel minimumWidth:[self.dateLabel.text re_sizeWithFont:self.dateLabel.font].width];
